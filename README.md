@@ -23,18 +23,18 @@
 5.  An array of doublewords, where each doubleword contains 2 values on a word (unpacked, so each nibble is preceded by a 0) is given. Write an asm program to create a new array of bytes which contain those values (packed on a single byte), arranged in an ascending manner in memory, these being considered signed numbers.\
 ***Example***:\
   &emsp;initial array: 0702090Ah, 0B0C0304h, 05060108h\
-  &emsp;result: 72h, 9Ah, 0BCh, 34h, 56h, 18h\ 
+  &emsp;result: 72h, 9Ah, 0BCh, 34h, 56h, 18h\
   &emsp;result in arranged manner: 9Ah, 0BCh, 18h, 34h, 56h, 72h
  
  6.  Given an array S of doublewords, build the array of bytes D formed from lower bytes of lower words, bytes multiple of 7.\
 ***Example***:\
-     &emsp;s DD 1234_5607h, 1A2B_3C15h, 13A3_3412h\
-     &emsp;d DB 07h, 15h
+     &emsp;s dd 1234_5607h, 1A2B_3C15h, 13A3_3412h\
+     &emsp;d db 07h, 15h
 
 7.  Given an array S of doublewords, build the array of bytes D formed from bytes of doublewords sorted as unsigned numbers in ascending order.\
 ***Example***:\
-     &emsp;s DD 1234_5607h, 1A2B_3C15h\
-     &emsp;d DB 07h, 12h, 15h, 1Ah, 2Bh, 34h, 3Ch, 56h
+     &emsp;s dd 1234_5607h, 1A2B_3C15h\
+     &emsp;d db 07h, 12h, 15h, 1Ah, 2Bh, 34h, 3Ch, 56h
  
  8.  Two strings of bytes A and B are given. Parse the shortest string of those two and build a third string C as follows:
        - up to the length of the shortest string C contains the largest element of the same rank from the two strings
@@ -42,7 +42,7 @@
 ***Example***:\
      &emsp;a db 4h, 28h, 16h, 18h, 6h, 8h\
      &emsp;b db 24h, 22h, 10h\
-     &emsp;resulted string: c -> 24h, 28h, 16h, 01h, 00h, 01h
+     &emsp;resulted string: 24h, 28h, 16h, 01h, 00h, 01h
  
  9.  A text file is given. Read the content of the file, count the number of vowels and display the result on the screen. The name of text file is defined in the data segment.
  
