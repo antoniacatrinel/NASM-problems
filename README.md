@@ -34,7 +34,7 @@
 7.  Given an array S of doublewords, build the array of bytes D formed from bytes of doublewords sorted as unsigned numbers in ascending order.\
 ***Example***:\
      &emsp;s DD 1234_5607h, 1A2B_3C15h\
-     &emsp;d DB 07h, 12h, 15h, 1Ah, 2Bh, 34h, 3Ch, 56h\
+     &emsp;d DB 07h, 12h, 15h, 1Ah, 2Bh, 34h, 3Ch, 56h
  
  8.  Two strings of bytes A and B are given. Parse the shortest string of those two and build a third string C as follows:
        - up to the length of the shortest string C contains the largest element of the same rank from the two strings
